@@ -6,15 +6,20 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-
+import { PipesModule } from '../pipes/pipes.module';
+import { SwiperModule } from 'swiper/angular';
+import { ComponentsModule } from '../components/components.module';
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    PipesModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    SwiperModule,
+    ComponentsModule,
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page],
 })
 export class Tab1PageModule {}
